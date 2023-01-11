@@ -68,6 +68,9 @@
 **/incremental_db/*
 **/db/*
 **/greybox_tmp/*
+**/.qsys_edit/*
+**/db/*
+**/lab1_sys/*
 **/output_files/*
 **/obj/*
 **/stamp/*
