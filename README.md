@@ -10,3 +10,15 @@ Nous avons dessiné la structure de notre système sur le schéma suivant :
 
 Afin de créer le système de base, j'ai ajouté **un module d'horloge**, **un module softcore NIOS II**, **un module de RAM** et **un module JATG UART** pour le débogage, comme le montre la figure.
 J'ai ensuite ajouté 3 modules PIO pour gérer les différentes entrées et sorties, un **PIO de 8 bits** pour la LED, un **PIO de 4 bits** pour le SWITCH et un **PIO de 1 bit** pour le PUSH.
+Dans le but de faciliter l'implémentation du chaser en utilisant des interruptions, j'ai activé les interruptions lors de la connexion des composants sur QSYS.
+
+Le schéma suivant montre le système sur **QSYS** :
+
+Après avoir terminé la configuration hardware , j'ai écrit le fichier HDL, assigné les pins et compilé le fichier. Après avoir corrigé tous les erreurs, je suis passé à la partie software.
+
+# Avancement et résultats
+J'ai implémenté une fonction de chaser 8 bits à vitesse réglable déclenchée par un bouton en utilisant respectivement le polling et les interruptions, le principe de base est le suivant :
+## éclairer le Led
+J'allume la Led correspondante en mettant la sortie PIO à 1.
+## Principe du chaser
+Je fixe la valeur initiale du PIO de la LED à 0x01, et je décale 1 bit vers la gauche chaque fois, lorsque le décalage est le plus à gauche, j'écris à nouveau la valeur initiale dans le PIO, et ainsi de suite pour réaliser la fonction de chaser.
