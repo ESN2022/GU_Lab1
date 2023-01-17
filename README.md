@@ -22,3 +22,6 @@ J'ai implémenté une fonction de chaser 8 bits à vitesse réglable déclenché
 J'allume la Led correspondante en mettant la sortie PIO à 1.
 ## Principe du chaser
 Je fixe la valeur initiale du PIO de la LED à 0x01, et je décale 1 bit vers la gauche chaque fois, lorsque le décalage est le plus à gauche, j'écris à nouveau la valeur initiale dans le PIO, et ainsi de suite pour réaliser la fonction de chaser.
+## Bouton de démarrage
+Il faut tout d'abord préciser que sur la carte, le bouton est toujours en **état haut** lorsqu'il n'est pas activé, et seulement quand le bouton est pressé, il sort un état bas. J'ai donc ajouté une autre boucle avant le code de la boucle du chaser, où la LED est continuellement écrite à la valeur 0xFF lorsque le bouton n'est pas pressé, et le programme ne sort de cette boucle que lorsque le bouton est pressé.
+
