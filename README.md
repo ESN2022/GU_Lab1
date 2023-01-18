@@ -32,4 +32,4 @@ Comme le DE10 fonctionne à une fréquence élevée, j'ai utilisé **usleep()** 
 https://user-images.githubusercontent.com/90764364/213117730-bb97b3ba-722c-4ece-bc73-f3975787ee65.mp4
 
 # Conclusion
-
+Le Lab1 est un TP intéressant, grâce auquel je me suis familiarisé avec le processus de co-conception sur le DE-10 Lite et avec les étapes opérationnelles sur QSYS et NIOS II. Même si j'ai rencontré des difficultés, notamment lors du changement du polling à l'interruption, ce TP m'a beaucoup apporté.
