@@ -142,7 +142,7 @@ ACDS_VERSION := 18.1
 ELF := C:/Users/hp/Desktop/refaire-tp/LAB_1/software/app/lab1.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS += C:/Users/hp/Desktop/refaire-tp/LAB_1/software/app/main_interruption.c
+C_SRCS += C:/Users/hp/Desktop/refaire-tp/LAB_1/software/app/main_polling.c
 CXX_SRCS :=
 ASM_SRCS :=
 

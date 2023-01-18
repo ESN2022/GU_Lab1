@@ -1,0 +1,27 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\hp\Desktop\ESN11_TP\LAB1\unsaved.qsys --block-symbol-file --output-directory=C:\Users\hp\Desktop\ESN11_TP\LAB1\unsaved --family="MAX 10" --part=10M50DAF484C7G
+Progress: Loading LAB1/unsaved.qsys
+Progress: Reading input file
+Progress: Adding Leds [altera_avalon_pio 18.1]
+Progress: Parameterizing module Leds
+Progress: Adding Push [altera_avalon_pio 18.1]
+Progress: Parameterizing module Push
+Progress: Adding Switch [altera_avalon_pio 18.1]
+Progress: Parameterizing module Switch
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_led [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_led
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: unsaved.Push: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: unsaved.Switch: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: unsaved.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: qsys-generate succeeded.
+Info: Stopping: Create block symbol file (.bsf)
