@@ -27,8 +27,9 @@ Il faut tout d'abord préciser que sur la carte DE-10 Lite, le bouton est toujou
 ## Switch pour changer la vitesse
 Comme le DE10 fonctionne à une fréquence élevée, j'ai utilisé **usleep()** après chaque décalage pour que le programme effectue un retard afin de distinguer clairement les LEDs, ce qui a également créé les conditions pour que je puisse changer la vitesse du chaser. J'ai réglé le temps de retard initial à 50000, mais avant chaque exécution de la fonction de retard, j'ai multiplié le temps de retard initial par la valeur représentée par **l'état de Switch** que j'ai lu, et j'ai ajouté à nouveau la valeur initiale à la fin pour éviter une valeur 0, de sorte que je puisse ajuster la vitesse du chasseur en modifiant le temps de retard du programme.
 
-## DEMO avec polling
+## DEMO
 
 https://user-images.githubusercontent.com/90764364/213117730-bb97b3ba-722c-4ece-bc73-f3975787ee65.mp4
 
+# Conclusion
 
